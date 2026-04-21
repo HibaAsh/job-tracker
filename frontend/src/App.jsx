@@ -68,14 +68,14 @@ function App() {
           Dashboard
         </NavLink>
 
-        <NavLink
+        {/* <NavLink
           to="/settings"
           style={({ isActive }) => getLinkStyle(isActive, "settings")}
           onMouseEnter={() => setHoveredLink("settings")}
           onMouseLeave={() => setHoveredLink(null)}
         >
           Settings
-        </NavLink>
+        </NavLink> */}
       </nav>
 
       <div
@@ -105,7 +105,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<Dashboard />} />
-        <Route path="/settings" element={<Settings />} />
+        {/* <Route path="/settings" element={<Settings />} /> */}
       </Routes>
     </div>
   );
