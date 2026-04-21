@@ -1,0 +1,36 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "company": "Google",
+      "role": "Frontend Developer",
+      "status": "applied",
+      "date": "2024-01-15",
+      "notes": "Sent resume via referral"
+    },
+    {
+      "id": "2",
+      "company": "Microsoft",
+      "role": "React Developer",
+      "status": "interview",
+      "date": "2024-01-20",
+      "notes": "First round next Tuesday"
+    },
+    {
+      "id": "3",
+      "company": "Amazon",
+      "role": "UI Engineer",
+      "status": "rejected",
+      "date": "2024-01-10",
+      "notes": "Got rejection email today"
+    },
+    {
+      "id": "4",
+      "company": "Netflix",
+      "role": "Senior Frontend",
+      "status": "offer",
+      "date": "2024-01-25",
+      "notes": "Received offer letter!"
+    }
+  ]
+}
