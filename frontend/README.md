@@ -1,16 +1,57 @@
-# React + Vite
+# Job Tracker - Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+React frontend for the Job Tracker application. Features job management with search, filters, pagination, and dark mode.
 
-Currently, two official plugins are available:
+## Live Demo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🔗 [View Live App](https://job-tracker-rupt.vercel.app/)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Job Management:** Add, edit, delete, and view job applications
+- **Search:** Real-time search by company name or role
+- **Filters:** Filter by application status (Applied, Interview, Offer, Rejected)
+- **Pagination:** Browse through jobs 5 at a time
+- **Dark Mode:** Toggle between light and dark themes (saves preference)
+- **Statistics:** Live counters showing application totals
+- **Responsive:** Works on desktop, tablet, and mobile
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+| Technology | Purpose |
+|------------|---------|
+| React 19 | UI framework |
+| Vite | Build tool |
+| React Router DOM | Navigation |
+| Axios | API calls |
+| Context API | Theme management |
+| LocalStorage | Theme persistence |
+
+## Project Structure
+
+```
+frontend/
+├── src/
+│ ├── components/
+│ │ ├── common/ # Button, Modal, ThemeToggle
+│ │ ├── JobCard/ # Individual job display
+│ │ ├── JobForm/ # Add job form
+│ │ ├── EditJobForm/ # Edit job form
+│ │ └── StatsCards/ # Statistics dashboard
+│ ├── contexts/ # ThemeContext
+│ ├── hooks/ # useLocalStorage
+│ ├── pages/ # Dashboard, Settings
+│ ├── services/ # API configuration
+│ └── css/ # Global styles
+├── index.html
+├── package.json
+└── vite.config.js
+```
+
+## Getting Started
+
+### Installation
+
+```bash
+cd frontend
+npm install
