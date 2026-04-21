@@ -8,10 +8,12 @@ A complete job application tracking system with React frontend and JSON Server b
 
 ## Repository Structure
 
+```
 job-tracker/
 ├── frontend/ # React application
 ├── backend/ # JSON Server API
 └── README.md # This file
+```
 
 ## Features
 
